@@ -1,0 +1,181 @@
+/* Establecer una imagen de fondo para toda la página */
+body {
+    background-image: url('fondo.jpeg');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* La imagen de fondo permanece fija mientras se hace scroll */
+}
+
+/* Puedes también añadir un fondo específico para las páginas create y index */
+.page-create, .page-index {
+    background-image: url('fondo.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.table-wrapper {
+    background-color: white; /* Fondo blanco para toda la tabla */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    max-width: 90%; /* Para que no ocupe toda la pantalla */
+    margin: auto; /* Centrar la tabla */
+    overflow-x: auto; /* Para hacer scroll en pantallas pequeñas */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f9fa; /* Fondo gris claro para toda la tabla */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #007BFF; /* Azul para los encabezados */
+    color: white;
+}
+
+tr {
+    background-color: #f8f9fa; /* Mismo color de fondo que la tabla */
+    transition: background-color 0.3s ease-in-out; /* Transición suave */
+}
+
+tr:hover {
+    background-color: #d6e0f5; /* Cambia a un azul claro cuando pasas el mouse */
+}
+
+
+
+
+
+body { font-family: Arial, sans-serif; }
+header { background: #7da8e8; color: white; padding: 10px; text-align: center; }
+table { width: 100%; border-collapse: collapse; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+footer { margin-top: 20px; text-align: center; }
+/* Estilo para los botones */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    background-color: #4552e2; /* Color de fondo */
+    color: white; /* Color del texto */
+    font-weight: bold;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+a:hover {
+    background-color: #aeb2df; /* Color de fondo cuando se pasa el ratón */
+}
+
+/* Estilo para los campos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo para el botón */
+button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo general para el contenedor del formulario */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo para el botón */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
