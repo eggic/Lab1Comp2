@@ -12,10 +12,24 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 include 'header.php';
 ?>
-<form method="post">
-    <input type="text" name="nombre" value="<?php echo $row['nombre']; ?>" required>
-    <input type="text" name="apellido" value="<?php echo $row['apellido']; ?>" required>
-    <input type="text" name="telefono" value="<?php echo $row['telefono']; ?>" required>
-    <button type="submit">Actualizar</button>
-</form>
+
+<div class="form-container">
+    <h2>Actualizar Usuario</h2>
+    <form method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" value="<?php echo $row['nombre']; ?>" required>
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="apellido" id="apellido" value="<?php echo $row['apellido']; ?>" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="text" name="telefono" id="telefono" value="<?php echo $row['telefono']; ?>" required>
+        </div>
+        <button type="submit" class="submit-btn">Actualizar</button>
+    </form>
+</div>
+
 <?php include 'footer.php'; ?>

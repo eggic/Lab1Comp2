@@ -7,7 +7,7 @@ $result = $conn->query("SELECT * FROM usuarios");
 <div class="table-container">
     <h2 style="text-align: center;">Usuarios Registrados</h2>
 
-    <div class="table-wrapper"> <!-- Nuevo div envolvente -->
+    <div class="table-wrapper"> 
         <table>
             <thead>
                 <tr>
@@ -29,7 +29,7 @@ $result = $conn->query("SELECT * FROM usuarios");
                 <?php } ?>
             </tbody>
         </table>
-    </div> <!-- Cierre del div -->
+    </div> 
 </div>
 
 <?php include 'footer.php'; ?>
